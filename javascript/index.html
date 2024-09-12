@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>javascript</h3>
+
+  <script>
+    console.log("helooo");
+    // Q1. varaible of type string try to add a number to it;
+    var a = "34" +"1";
+    console.log(a);
+    // or
+    var b = "esha";
+    console.log(a + b);
+    // Q2. use typeof operator in last string ( i think this will show string because these number were in "")
+    console.log(typeof a );
+    console.log(typeof a+ b );
+    console.log(typeof (a+ b) );
+    // Q3. const object can you change it to hold a number later (i think no )
+     const item = {
+      ob1 : true,
+      ob2 : false,   
+      ob3 : 234 ,
+      ob4 : "hello esha!",
+    }
+    ob4 = "hello!"
+    console.log(item['ob3']);
+    console.log(item[typeof 'ob3']);
+    console.log(item[typeof 'ob1']);
+    console.log(item['ob4']);
+    console.log(item);
+    // Q4. try to add a new key to const object  ( we can add values , can change value)
+
+    // adding value in object
+    item['ob5']="eat sleep  code";
+    console.log(item);
+    // we can also change values
+    item['ob5']="code code code";
+    console.log(item);
+
+    // in item object we cannot store number , string etc not even another object but we can change in object and add in object 
+
+    //Q5. js program to craete  a word dictionary of 5 words
+     const dictionary = {
+      meraki : "to do something with soul or love",
+      Alluring: "Irresistible very attractive.",
+      Beatify: "Blissful; make happy.",
+      Benevolence:"Given generously, a kindness.",
+      Calm: "Undisturbed; still."
+     } 
+     console.log(dictionary);
+     console.log(dictionary.meraki);
+    //  for in loop
+     for (let key in dictionary){
+      console.log('meaning of'+ 
+      " " + key + "is" + dictionary[a])
+     }
+    //  for loop
+    for (let i=0; i<Object.keys(dictionary).length;i++){
+      console.log('dictionary word ' + Object.keys(dictionary)[i] + dictionary[Object.keys(dictionary)[i]])
+    }
+
+    //  for of  loop 
+    for (let b of 'esha'){
+      console.log(b);
+    }
+    //  arithematic operators
+    let value1 = 60;
+    let value2 = 30;
+    console.log("value1 + value2 =", value1 + value2);
+    console.log("value1 - value2 =", value1 - value2);
+    console.log("value1 * value2 =", value1 * value2);
+    console.log("value1 / value2 =", value1 / value2);
+    console.log("value1 ** value2 =", value1 ** value2);
+    console.log(" reminder = value1 % value2 =", value1 %  value2);
+    // value1 =61 
+    console.log("++value1 =" , ++value1);
+    // value1 = 61
+    // but after 61 ++ add 1 and now value is 62
+    console.log("value1++ =" , value1++);
+    // value1 =62 -1 = 61
+    console.log("--value1 =" , --value1);
+    // 61 print howa now value is 60
+    console.log("value1-- =" , value1--);
+    //  value1 = 60
+    console.log("value1=", value1);
+    // value 60 print pehly ho jayyee gii minus bad maii ho gaa or answer ayye gaa 59
+    console.log("value1--=", value1--);
+    console.log("value1=", value1);
+
+    // conditional statements
+    let age = prompt('hey what is your age?');
+    console.log(age);56
+
+    console.log(typeof age);
+    a = Number.parseInt(age);
+    console.log(typeof a);
+    // if else
+    if(age<10){
+      alert('you are teenager!');
+    }
+    else if( age<19){
+      alert('enjoy life!');
+    }
+    else if( age<20 &&  age>=19){
+      alert('focus!');
+    }
+    else{
+      alert('you are not teenager yet!');
+    }
+
+    // logical operator age is betwwen 10 and 20 
+    let guess = prompt("guess number!");
+    if(guess> 10 && guess<20){
+      alert('right');
+    }
+    else{
+      alert('wrong');
+    }
+
+    // switch case
+    // for loop
+    let sum=0;
+    let n = prompt('enetr value of n');
+    n = Number.parseInt(n);
+    for (let i = 0 ; i<n; i++){
+      sum += (i+1) ;
+    console.log(i);
+
+    }
+    console.log(sum);
+    console.log("hello22");
+
+    // console.log('n' + n + 'sum' +sum);
+
+    // functions
+    function onePlusAvg (x,y){
+      return 1 + (x+y)/2;
+      console.log('function');
+    }
+    console.log(onePlusAvg(12,33),'ans');
+    console.log(onePlusAvg(12,30),'ans');
+    console.log(onePlusAvg(12,31),'ans');
+
+
+    // enter correct number
+
+    // let cn = prompt('give number');
+    let cn=4;
+    let user;
+    while (user != cn){
+      user = prompt('guess a number');
+    }
+
+
+    // let array1 = [3,54,65,76,4];
+    // for (let i = 0 ; i< num.length;i++){
+    //   console.log(num[i])
+    // }
+
+    //  ``f
+    // num.forEach((element) => {
+    //   console.log(element*element)
+    // });
+
+    console.log("hello");
+    alert("enetr a number");
+    let aaa = prompt("enter here", "222");
+    aaa = Number.parseInt(aaa);
+    alert ("you have enter a number" + (typeof aaa));
+    let write = confirm("are you sure?");
+    if (write){
+      document.write(aaa);
+    }
+    else document.write("allow to write ");
+    console.log("helo");
+
+    // you can drive or not
+    let runagain = true;
+    const candrive=(age3)=>{
+      return age3>=18 ? true : false;
+    } 
+    
+    while(runagain){
+
+      let age3 = prompt("enter age to check if you can drive or not");
+      age3 = Number.parseInt(age3);
+      // if someone enter negative age 
+      if(age3<0){
+        console.error("please enter valid age");
+        break;
+      }
+
+    if (candrive(age3)){
+      alert(" congratulation! you can drive");
+    }
+    else{
+      alert("sorry you cannot drive");
+    }
+    runagain = confirm("do you want to ask again if you can drive or not?");
+  }
+
+  // redirect location
+  let number2 = prompt("if number greater than 4, location will redirect you to google");
+  number2= Number.parseInt(number2);
+
+  if(number2 > 4){
+    location.href = "https://www.google.com/"
+  }
+
+  // changing baackground color
+  let color = prompt("enter color to change background");
+  document.body.style.background = color;
+   
+  // while (changecoloragain(color)){
+  //   changecoloragain = confirm("want to change color again? ");
+
+  // } 
+  </script>
+</body>
+</html>

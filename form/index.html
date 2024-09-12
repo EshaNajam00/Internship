@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>form</title>
+</head>
+<body>
+  <form action="#" method="post" autocomplete="on" >
+    <h1>Form</h1>
+    <fieldset>
+      <legend>Name</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="ESHA NAJAM" readonly><br><br>
+      <label for="lastname">last name</label>
+      <input type="text" name="lastname" id="lastname" value="" autofocus required ><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Choose</legend>
+      <label for="food">favorite food</label><br>
+      <input type="checkbox" name="food" id="chips" checked required>
+      <label for="chips">chips</label><br>
+      <input type="checkbox" name="food" id="pizza" value="pizza" checked required>
+      <label for="pizza">pizza</label><br>
+      <input type="checkbox" name="food" id="pasta" value="pasta" checked required>
+      <label for="pasta">pasta</label><br><br>
+      <label for="color">choose favorite color!</label>
+      <input type="color" name="color" id="color" required><br><br>
+      <label for="">favorite ice cream</label><br>
+      <input type="radio" name="ice_cream" value="VANILLA" id="vanilla" required>
+      <label for="ice_cream">vanilla</label>
+      <br>
+      <input type="radio" name="ice_cream" id="chocolate" value="CHOCOLATE" required>
+      <label for="chocolate">chocolate</label><br>
+      <input type="radio" name="ice_cream" id="coffee" value="COFFEE" required>
+      <label for="coffee">coffee</label><br><br>
+      <label for="city">choose a city!</label><br>
+      <select name="city" id="city" size="3" multiple   required>
+        <option value="Multan">Multan</option>
+        <option value="Okara" >Okara</option>
+        <option value="Lahore" selected>Lahore</option>
+        <option value="Burewala">Burewala</option>
+      </select><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Date and time</legend>
+      <label for="date">Bate of birth</label>
+      <input type="date" name="date" id="date" min="1990-12-12" max="2024-12-12" required><br><br>
+      <label for="date">form submitting date</label>
+      <input type="date" name="date" id="date" max="2024-12-31" required><br><br>
+      <label for="">today's date and time</label>
+      <input type="datetime-local" name="" id="" required><br><br>
+      <label for="">select month</label>
+      <input type="month" name="" id="" required><br><br>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" placeholder="age" min="18" max="40" maxlength="2" required><br><br>
+      <label for="">time</label>
+      <input type="time" name="" id="" required><br><br>
+      <label for="">select week</label>
+      <input type="week" name="" id="" required><br><br>
+
+    </fieldset>
+    <fieldset>
+      <legend>Personal data</legend>
+      <label for="email">write email</label>
+      <input type="email" name="name" id="email" placeholder="example@gmail.com" required><br><br>
+      <label for="">select file</label>
+      <input type="file" name="" id="" required><br><br>
+      <label for="address">address</label><br>
+      <textarea name="address" required id="address" cols="25" rows="5" placeholder="write address here!"></textarea ><br><br>
+      <label for="">write password</label>
+      <input type="password" name="" id="" maxlength="8" placeholder="password.." required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>info..</legend>
+      <label for="">download  image</label><br>
+      <input type="image" src="/backg.jfif" alt="" required><br><br>
+      <label for="">range</label>
+      <input type="range" name="" id="" required><br><br>
+     
+      <label for="">search here!</label>
+      <input type="search" placeholder="search" id="" required><br><br>
+      <label for="">tel</label>
+      <input type="tel" name="tel" id="tel" required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  maxlength="12" placeholder="phone number.."><br><br>
+        <label for="datalist">datalist</label>
+        <input list="datalist" required disabled>
+        <datalist id="datalist">
+          <option value="A">A</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+        </datalist><br><br>
+    </fieldset><br>
+    
+    <input type="reset" value="Reset">
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>

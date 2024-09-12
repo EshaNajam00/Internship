@@ -1,0 +1,19 @@
+body{
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 50%;
+  background-color: rgb(195, 233, 220);
+  color: rgb(72, 179, 179);
+}
+button{
+  background-color: rgb(170, 134, 204);
+  border: 1px solid palevioletred;
+  margin: 3px;
+  padding: 4px;
+  margin-left: 5%;
+  border-radius: 6%;
+  color: rgb(109, 10, 109);
+}
+video{
+  width: 400px;
+}

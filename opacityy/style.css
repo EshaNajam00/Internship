@@ -1,0 +1,42 @@
+
+img{
+  float: left;
+  width: 25%;
+  /* height: 90px; */
+}
+p{
+  height: 50pxpx;
+  margin: 10px;
+  float: left;
+  width: 70%;
+}
+.one{
+  text-align: justify;
+  background-color: rgb(238, 133, 84);
+  float: left;
+  opacity: 0.4;
+  padding: 18px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(230, 106, 127);
+}
+
+#two{
+  background-color: rgba(238, 133, 84,0.4);
+  float: left;
+  padding: 18px;
+  border: 2px solid rgb(238, 172, 183);
+ 
+}
+@media screen and (max-width:800px){
+
+}
+
+/* img{
+  width: 50%;
+}
+section{
+  width: 100%;
+}
+p{
+  width: ;
+} */

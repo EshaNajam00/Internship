@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 1024.00 1024.00" class="icon" version="1.1" fill="var(--color-header)" stroke="var(--color-header)" stroke-width="0.01024" transform="rotate(0)">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-header)" stroke-width="2.048"/>
+    <g id="SVGRepo_iconCarrier">
+        <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="var(--color-header)"/>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+.container{
+  display: grid;
+  grid-template-areas: 
+          "header header header header" 
+          "sidebar main main main"
+          "sidebar main main main" 
+          "footer footer footer footer";
+}
+.box{
+  border: 2px solid black;
+}
+#box1{
+grid-area: header;
+padding: 20px;
+margin: 10px;
+width: 100%;
+height: ;
+}
+
+#box2{
+grid-area: sidebar;
+padding: 20px;
+margin: 10px;
+width: 30%;
+}
+
+#box3{
+grid-area: main;
+padding: 20px;
+margin: 10px;
+width: 70%;
+}
+#box4{
+grid-area: footer;
+padding: 20px;
+margin: 10px;
+width: 100%;
+}

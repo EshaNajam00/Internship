@@ -1,0 +1,8 @@
+.img2{
+  width: 100%;
+  /* in width  the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead. */
+  /* use max-width:100% because the image will scale down if it has to, but never scale up to be larger than its original size: */
+}
+.img1{
+  max-width: 100%;
+}

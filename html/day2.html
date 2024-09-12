@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: url('');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    table,th,td,tr{
+      border: 1px solid  salmon;
+      border-collapse: 
+      /* collapse */
+       ;
+    }
+    tr:nth-child(even){
+      background-color: burlywood;
+    }
+   th:nth-child(even), td:nth-child(even){
+      background-color:rgb(228, 174, 104);
+    }
+
+    tr:hover{
+      background-color: coral; 
+    }
+
+    /* list menu navigation */
+li{
+  float: left;
+  ;
+}
+li a:hover{
+  background-color: rgb(158, 223, 240);
+}
+ul{
+  list-style-type: none;
+ overflow: hidden;
+ padding: 0;
+ margin: 0;
+ background-color: #2f2f2f; 
+}
+li a{
+  color: antiquewhite;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+
+}
+  </style>
+</head>
+<body>
+  <h2>Day 2</h2>
+  <button style="background-color: rgb(53, 133, 136); color: white; padding: 15px;"><a href="/index.html">Go to day 1</a></button>
+  <button  style="background-color: rgb(53, 133, 136); color: white; padding: 15px;"><a href="/day3.html">Go to day 3</a></button>
+  <button id="link" onclick="document.location= 'https://www.google.com/'" > search on GOOGLE</button><br><br>
+
+<a href="https://www.google.com/" target="_blank" id="active">change color when active </a><br><br>
+<a href="https://www.google.com/" target="_blank" id="simple">change color when simple</a><br><br>
+<a href="https://www.google.com/" target="_blank" id="visited">change color when visited </a><br><br>
+<a href="https://www.google.com/" target="_blank" id="hover">change color when hover</a><br><br>
+
+
+<hr>
+<img src='https://img.freepik.com/premium-vector/motivational-quotes-quotes-about-life-life-quotes_681002-461.jpg' alt="quote" style=" width: 500px; height: 600px;"> <br><br> <hr>
+<p>
+<img src="/programming.gif" alt="work work"  style="float:right; padding: 20px;"> image floating to the right
+</p>
+<p>
+  <img src="/programming.gif" alt="work work"  style="float:left; padding: 20px;"> image floating to the left of the text
+  </p><br><br>
+
+<hr>
+<h1>THE MAP/CLICKABLE AREA 
+</h1>
+<h2>Click to Purchase!</h2>
+<img src="map.webp" alt="books" usemap="#bookmap" >
+<map name="bookmap">
+  <area shape="rect" coords="20,14,136,193" href="https://www.amazon.com/Art-Learning-Journey-Optimal-Performance/dp/0743277465" target="_blank" alt="book 1" onclick="book()">
+  <area shape="rect" coords="158,15,277,192"  target="_blank" href="https://www.amazon.com/Laws-Simplicity-Design-Technology-Business/dp/0262134721" alt="book 2"  onclick="book()">
+  <area shape="rect" coords="299,11,417,189" target="_blank"  href="https://www.amazon.com/Make-Stick-Science-Successful-Learning/dp/0674729013" alt="book 3" onclick="book()">
+  <area shape="rect" coords="438,17,555,193"  target="_blank" href="https://www.amazon.com/Mindshift-Obstacles-Learning-Discover-Potential/dp/1101982853" alt="book 4" onclick="book()">
+  <area shape="rect" coords="582,13,698,192"  target="_blank" href="https://www.amazon.com/Ultralearning-Master-Outsmart-Competition-Accelerate/dp/006285268X" alt="book 5" onclick="book()">
+  <area shape="rect" coords="25,204,149,382"  target="_blank" href="https://www.amazon.com/Mastery-Robert-Greene/dp/014312417X" alt="book 6" onclick="book()">
+  <area shape="rect" coords="170,201,284,375" target="_blank"  href="https://www.amazon.com/Brain-Rules-Principles-Surviving-Thriving/dp/0979777747" alt="book 7" onclick="book()">
+  <area shape="rect" coords="306,204,424,380" target="_blank"  href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692" alt="book 8" onclick="book()">
+  <area shape="rect" coords="447,207,559,381" target="_blank"  href="https://www.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322" alt="book 9" onclick="book()">
+  <area shape="rect" coords="580,205,700,376" target="_blank"  href="https://www.amazon.com/Talent-Code-Greatness-Born-Grown/dp/055380684X" alt="book " onclick="book()">
+  </map>
+  <br>
+<hr>
+<h1>The picture element</h1>
+<p> Resize the browser window to load different images.</p>
+<!-- <picture>
+  <source media="min-width:100%" srcset="p1.webp">
+  <source media="min-width:60%" srcset="p2.png">
+   <img src="p3.webp" alt="quote"> -->
+<!-- </picture> --> 
+
+<picture>
+  <source media="(min-width:650px)" src="/map.webp">
+  <source media="(min-width:1800px)" src="/p2.png">
+  <img src="/programming.gif" alt="Flowers" style="width:auto;">
+
+</picture>
+<script>
+  function book(){
+    alert('goingg too another pagee!!!')
+  }
+</script><br><br><hr>
+<table style="width: 100%; border: 1px solid black;">
+    <caption>this is table caption</caption>
+  <colgroup>
+  <col span="3" style="border: 1px solid black; background-color: wheat;">
+  <col span="2" style="background-color: bisque;">
+  </colgroup> 
+  <thead style="border: 1px solid black;">
+    <tr>
+      <th>
+        header 
+      </th>
+      <th style="width: 40%;">
+        header with 40% width
+      </th> <th style="width: 30%;">
+        header with 30% width
+      </th> <th>
+        header 
+      </th> <th>
+        header 
+      </th>
+    </tr>
+  </thead>
+  <tbody style="border: 1px solid black;">
+
+    <tr style="border-style: dotted;">
+      <td style="border-style: dotted;">1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      
+    </tr>
+    <tr style="height: 100px;">
+      <td>11 row with height 100px</td>
+    <td style="border-style: dashed;">12</td>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    
+  </tr> <tr>
+    <td>31</td>
+    <td>32</td>
+    <td>33</td>
+    <td>34</td>
+    <td>35</td>
+    
+  </tr> <tr>
+    <td>41</td>
+    <td>42</td>
+    <td>43</td>
+    <td>44</td>
+    <td>45</td>
+    
+  </tr> <tr>
+    <td>51</td>
+    <td>52</td>
+    <td>53</td>
+    <td>54</td>
+    <td>55</td>
+    
+  </tr> <tr>
+    <td>61</td>
+    <td>62</td>
+    <td>63</td>
+    <td>64</td>
+    <td>65</td>
+    
+  </tr> <tr>
+    <td>71</td>
+    <td>72</td>
+    <td>73</td>
+    <td>74</td>
+    <td>75</td>
+  </tr> 
+</tbody>
+  <tfoot>
+    <tr>
+      <td colspan="5" style="text-align: center;"> this is footer of the table</td>
+    </tr>
+  </tfoot>
+</table>
+<table>
+  <caption>VERTICAL TABLE HEADER</caption>
+  <tr>
+    <th>name</th>
+    <th>roll no</th>
+    <th>class</th>
+
+  </tr>
+  <tr>
+    <th>A</th>
+    <td>1</td>
+    <td>XI</td>
+  </tr>
+  <tr>
+    <th>B</th>
+    <td>1</td>
+    <td>XII</td>
+  </tr>
+  <tr>
+    <th>C</th>
+    <td>9</td>
+    <td>XII</td>
+  </tr>
+  <tr>
+    <th>D</th>
+    <td>10</td>
+    <td>X</td>
+  </tr>
+</table>
+
+<table style="width: 100%;">
+  <caption >Header for multiple column</caption>
+  <tr>
+    <th rowspan="2">Name</th>
+    <th colspan="4">Marks</th>
+  </tr>
+  <tr>
+    <th>Math</th>
+    <th>Phy</th>
+    <th>Chem</th>
+    <th>Urdu</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>10</td>
+    <td>35</td>
+    <td>98</td>
+    <td>67</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>67</td>
+    <td>10</td>
+    <td>98</td>
+    <td>35</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>35</td>
+    <td>10</td>
+    <td>67</td>
+    <td>98</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>10</td>
+    <td>98</td>
+    <td>35</td>
+    <td>67</td>
+  </tr>
+
+</table>
+
+<hr>
+<table>
+  <caption>HTML Table - Zebra Stripes</caption>
+  <tr>
+    <th>heading1</th>
+    <th>heading2</th>
+    <th>heading3</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>32</td>
+    <td>33</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>42</td>
+    <td>43</td>
+  </tr>
+</table>
+<hr>
+
+
+
+<table style="width: 100%;" id="hoverable">
+  <caption>hoverable table</caption>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+  </tr> <tr>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+  </tr> <tr>
+    <td>31</td>
+    <td>32</td>
+    <td>33</td>
+  </tr>
+</table>
+<hr>
+<h1>navigation menu using list</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#contact">contact</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+
+<h1><a href="/controlList.html">contol list counting</a></h1>
+<div>
+
+  <div style="background-color: rgb(13, 163, 113); width: 400px; margin: auto; display: inline-block;">
+    <h2>cenetr align div</h2>
+    <p style="width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nesciunt ad, nam, dolores totam asperiores accusamus at vero dicta recusandae, accusantium eos nemo ipsam minima ipsa doloribus eum! Atque, sunt.</p>
+  </div>
+  <div style="background-color: rgb(21, 92, 68); width: 400px; margin: auto; display: inline-block;">
+    <h2>cenetr align div</h2>
+    <p style="width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nesciunt ad, nam, dolores totam asperiores accusamus at vero dicta recusandae, accusantium eos nemo ipsam minima ipsa doloribus eum! Atque, sunt.</p>
+  </div><div style="background-color: aquamarine; width: 400px; margin: auto; display: inline-block;">
+    <h2>cenetr align div</h2>
+    <p style="width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nesciunt ad, nam, dolores totam asperiores accusamus at vero dicta recusandae, accusantium eos nemo ipsam minima ipsa doloribus eum! Atque, sunt.</p>
+  </div>
+</div>
+<div style="display: flex;;">
+
+  <div style="background-color: chocolate;;">
+    <h2>heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, animi facilis in est praesentium nulla aperiam impedit ipsum adipisci cum deleniti, vitae recusandae atque nihil delectus rem enim deserunt magni?</p>
+  </div>
+  <div style="background-color: rgb(211, 147, 102);">
+    <h2>heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, animi facilis in est praesentium nulla aperiam impedit ipsum adipisci cum deleniti, vitae recusandae atque nihil delectus rem enim deserunt magni?</p>
+  </div>
+  <div style="background-color: rgb(238, 195, 165);">
+    <h2>heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, animi facilis in est praesentium nulla aperiam impedit ipsum adipisci cum deleniti, vitae recusandae atque nihil delectus rem enim deserunt magni?</p>
+  </div>
+</div>
+<hr>
+<div style="display: grid; grid-template-areas: 
+     'header header'
+     'sidebar content'
+     'footer footer';">
+  <div style="grid-area: header; background-color: rgb(216, 156, 156); height: 40px; width: 100%;">Header</div>
+  <div style="grid-area: sidebar; background-color: darkgray; height: 40px; width: 100%;">Sidebar</div>
+  <div style="grid-area: content; background-color: rgb(134, 82, 82); height: 40px; width: 100%;">Main Content</div>
+  <div style="grid-area: footer; background-color: rgb(80, 44, 44); height: 40px; width: 100%;">Footer</div>
+</div>
+<br><br><hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=3XquPxNvcnGdRTrS" title="YouTube video player" name="iframe_a"></iframe> 
+<iframe src="https://www.wikipedia.org/" frameborder="0" width="560" height="315" title="wikipedia" name="iframe_b"></iframe>  ></iframe>
+
+<h2>Iframe target for a link</h2>
+<span><a href="https://www.wikipedia.org/" target="iframe_a" style="background-color: cadetblue; color: white; padding: 15px; margin: 2px;">wikipedia</a></span>
+<span><a href="https://www.youtube.com/embed/HcOc7P5BMi4?si=3XquPxNvcnGdRTrS" target="iframe_b" style="background-color: cadetblue; color: white; padding: 15px; margin: 2px;" >Tutorial  </a></span>
+</body>
+</html>

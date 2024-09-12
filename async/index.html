@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>setTimeout</h1>
+  <button id="stop">stop</button>
+
+  <script>
+    const sayesha = function(){
+      console.log("esha");
+    }
+    console.log("helo");
+    setTimeout(sayesha,2000)  
+
+    // changing h1 tag
+    
+    const changeh1 = function(){
+      document.querySelector("h1").innerHTML = "setTimeout with chai or javascript"; 
+      console.log('changing h1');
+    }
+    const changeme =  setTimeout(changeh1 , 3000);
+
+    document.querySelector("#stop").addEventListener('click',function(){
+      clearTimeout(changeme);
+    })
+    
+
+  </script>
+</body>
+</html>
